@@ -1,0 +1,121 @@
+/********************************************/
+/* Hojas de estilo para autores             */
+/* Autor: Miguel Ángel Ávila Rosas          */
+/* Version: 1.2                             */
+/* Creado el: 23 de octubre de 2023         */
+/* Actualizado el: 28 de octubre de 2023    */
+/********************************************/
+
+@font-face {
+      src: url(./Fonts/Braxton\ Free.otf);
+      font-family: texto;
+}
+
+@font-face {
+      src: url(./Fonts/Olivia-Regular.otf);
+      font-family: titulo;
+}
+
+/*Poner SIEMPRE que utilicemos un layout complejo*/
+/*las medidas*/
+* {box-sizing:border-box;}
+
+/******ESTILO GENERAL******/
+body {background-image: url(./img/fondo.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0;
+      padding: 0;             /*para que el wrapper se pegue al body*/
+      font-size: 1.5em;      /*em y rem son caracteres exclusivos para la letra*/
+      font-family: texto;
+}
+
+blockquote {font-style: italic;
+      border: solid #AE9D4E;
+      padding: 0;
+      margin-top: -12px;
+      font-family: texto;
+      color: #97811E;
+      text-align: center;
+}
+/*Tipo de letra*/
+h1{
+   font-family: titulo;
+   text-align: center;
+   font-size: 3.5em;
+   color: #AE9D4E;
+}
+
+h2{margin-left: 2%;
+font-size: 2.5em;
+font-family: titulo;
+text-align: center;
+color: #AE9D4E;
+}
+
+ul {list-style-image: url(./img/lista.png);
+}
+
+dt {
+font-weight: bold;
+text-decoration: underline;
+text-align: center;
+margin-bottom: 12px;
+margin-top: 12px;
+}
+
+dd {
+text-align: center;
+margin-left: -5px;
+}
+img {
+     width: 50%; /*Es el 50% del contenedor en el que este.*/
+     float: right;
+}
+
+/******ESTILO ESPECIFICO******/
+#wrapper {width: 80%;
+          margin:auto;
+          padding: 5%;
+          color: #AE9D4E;
+          background-image: url(./img/menu.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+      }
+
+#texto {
+        margin-left: 3%;
+}
+
+#macarrones {font-style: italic;
+             padding: 0;
+             text-align: center;
+      }
+
+#preparacion {margin-top: 15%;}
+
+#infonutricion {border: solid #97811E;
+                width: 40%;
+                margin-left: 31%;
+}
+
+/*Tablet*/
+@media only screen and (width<=1050px) {
+  h1{font-size: 3.75rem;}
+  #infonutricion {
+      width: 60%;
+      margin-left: 20%;
+}
+}
+
+/*Movil*/
+@media only screen and (width<=700px) {
+  #wrapper {width: 95%;}      /*Redifino el ancho de wrapper para moviles*/
+  h1{font-size: 3.5rem;}
+  h2{font-size: 1.75;}
+  img {width: 100%;}
+  #infonutricion {
+                  width: 80%;
+                  margin-left: 10%;
+}
+}
