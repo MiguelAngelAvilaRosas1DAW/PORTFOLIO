@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--CSS-->
+  <link rel="stylesheet" href="./CSS/halloween.css">
+  <!--Favicon-->
+  <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+  <script src="./js/halloween.js"></script>
+  <title>Mistery House</title>
+</head>
+<body>
+  <!--WARNING: It's not RESPONSIVE, only for computers and laptops.-->
+  <div id="escenario">
+    <img id= "stranger" src="./img/stranger.gif" alt="stranger">
+    <img id= "girl" src="./img/Girl.png" alt="girl">
+    <img id= "something" src="./img/something.png" alt="something">
+
+    <div id="textDoor">
+      <p>Can you see it too...?</p>
+      <p>Something... in the door...</p>
+    </div>
+
+    <div id="textTree">
+      <p>It knows <br> all your</p>
+      <p id="textred">FEARS</p>
+    </div>
+
+    <div id="textBush">
+      <p>You can't hide<br>the truth forever</p>
+    </div>
+
+    <!--Image Stranger-->
+    <div onmouseover="mostrar('stranger');sonar('strangersound')"onmouseout="ocultar('stranger');pausar('strangersound')" id="bush">
+      <audio id="strangersound" preload="auto">
+        <source src="./sound/strangersound.mp3" type="audio/mp3"></source>
+      </audio>
+    </div>
+
+    <!--Image Girl-->
+    <div onmouseover="mostrar('girl');sonar('girlsound')"onmouseout="ocultar('girl');pausar('girlsound')" id="door">
+      <audio id="girlsound" preload="auto">
+        <source src="./sound/girlsound.mp3" type="audio/mp3"></source>
+      </audio>
+    </div>
+
+    <!--Image Something-->
+    <div onmouseover="mostrar('something');sonar('somethingsound')"onmouseout="ocultar('something');pausar('somethingsound')" id="text">
+      <audio id="somethingsound" preload="auto">
+        <source src="./sound/somethingsound.mp3" type="audio/mp3"></source>
+      </audio>
+    </div>
+
+    </div>
+  </div>
+</body>
+</html>

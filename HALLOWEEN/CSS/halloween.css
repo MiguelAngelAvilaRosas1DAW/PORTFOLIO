@@ -1,0 +1,116 @@
+/********************************************/
+/* Hojas de estilo para autores             */
+/* Autor: Miguel Ángel Ávila Rosas          */
+/* Version: 1.2                             */
+/* Creado el: 6 de noviembre de 2023        */
+/* Actualizado el: 15 de noviembre de 2023  */
+/********************************************/
+
+/************************************FUENTES************************************/
+@font-face {
+  src: url(../font/youmurdererbb_reg.ttf);
+  font-family: titulo;
+}
+
+/*********************************ESTILO GENERAL*********************************/
+
+body {
+      background-color: black;
+      font-family: titulo;
+      color: white;
+      text-align: center;
+      font-size: 3rem;
+}
+
+/*******************************ESTILO ESPECÍFICO********************************/
+
+#escenario {
+            width: 1500px;
+            height: 1500px;
+            background-image: url(../img/house.png);
+            margin: auto;
+            position: relative;}
+
+#textDoor {
+  position: absolute;
+  left: 575px;
+  bottom: 525px;
+}
+
+#textBush {
+  position: absolute;
+  left: 1100px;
+  bottom: 175px;
+}
+
+#textTree {
+  position: absolute;
+  left: 655px;
+  top: 300px;
+}
+
+#textred {
+  margin-top: -50px;
+  color: red;
+}
+
+#bush {
+  width: 498px;
+  height: 250px;
+  position: absolute;
+  border-radius: 50%;
+  left: 1000px;
+  bottom: 1px;
+ }
+
+#door {
+        width: 150px;
+        height: 250px;
+        position: absolute;
+        border-radius: 50%;
+        left: 700px;
+        bottom: 0px;
+      }
+
+#text {
+        width: 80px;
+        height: 50px;
+        position: absolute;
+        border-radius: 50%;
+        left: 680px;
+        top: 425px;
+        }
+
+#stranger {
+          width: 498px;
+          height: 250px;
+          position: absolute;
+          left: 1000px;
+          bottom: 1px;
+          visibility: hidden;
+}
+
+#girl {
+       width: 380px;
+       height: 410px;
+       position: absolute;
+       left: 575px;
+       bottom: 0px ;
+       visibility: hidden;
+       transition: width 1s, height 1s;
+       transition-delay: 1s
+}
+
+#girl:hover {
+  width: 850px;
+  height: 917px;
+}
+
+#something {
+  width: 400px;
+  height: 301px;
+  position: absolute;
+  left: 510px;
+  top: 10px;
+  visibility: hidden;
+}
